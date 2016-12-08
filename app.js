@@ -15,30 +15,12 @@ app.use(express.static(__dirname + '/public'));
 
 // Tml initialization
 app.use(tml.init({
-
-  key: "6ae433fc569de0569c8d94ebd24eb72c6f453f29624c5ad0ff9b60a11a604462",
-  token: "8bf44650b398d242d5a8ddbae0239fae498ccdc7032987a1ac8c92d693eba95b",
-  host: "http://localhost:3000",
-  debug: true,
-
-  //key:    "ced4ac9a2e16bc7993a6f4f5cb8309c62d8cda56f1c801ccb507247f6e3d0b06",
-  //host:   "https://staging-api.translationexchange.com",
-  //debug:  true
-
+  key:    "f23ea19f8a2ac12dd8249dc5da565bc12107d29aed3f2b27d42080857d264c03",
   cache: {
     adapter: 'memcache',
     hosts: ["localhost:11211"],
-    namespace: "6ae433fc"
-  },
-
-  agent: {
-    host: "http://localhost:8282/dist/agent.js"
+    namespace: 'f23ea19f8a'
   }
-
-  //cache: {
-  //  adapter: "file",
-  //  path: "./cache"
-  //}
 
 }));
 
